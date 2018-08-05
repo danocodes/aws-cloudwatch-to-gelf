@@ -5,7 +5,7 @@ public class PropertyReader {
 
     private static String[] PROPERTIES_FILES = { "aws.properties", "graylog.properties" };
 
-    public static String getProperty( String propertyKey ) {
+    public static String readProperty( String propertyKey ) {
 
         try {
             for ( String fileName : PROPERTIES_FILES ) {
